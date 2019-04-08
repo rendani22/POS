@@ -1,0 +1,135 @@
+<div class="container themed-grid-col">
+	<div class="row mb-3">
+			<div class="col-md-8" >
+
+				<form class="form-signin">
+													<!-- Select customer -->
+					<input type="email" id="inputEmail" [(ngModel)]= "customerName" name="customerName"  class="form-control" placeholder="Customer Name" required autofocus>
+					<input type="email" id="inputEmail" [(ngModel)]= "search" name="search"  class="form-control" placeholder="Search Products" required autofocus>
+					<!-- /<input type="text" name=""> -->
+
+						<table class="table">
+						  <thead>
+						    <tr>
+						      <th scope="col">#</th>
+						      <th scope="col">Name</th>
+						      <th scope="col">Price</th>
+						      <th scope="col">Quantity</th>
+						      <th scope="col">Remove</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">1</th>
+						      <td>Mark</td>
+						      <td>Otto</td>
+						      <td>@mdo</td>
+						      <td><a><b>X</b></a></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">2</th>
+						      <td>Jacob</td>
+						      <td>Thornton</td>
+						      <td>@fat</td>
+						      <td><a><b>X</b></a></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">3</th>
+						      <td>Larry</td>
+						      <td>the Bird</td>
+						      <td>@twitter</td>
+						      <td><a><b>X</b></a></td>
+						    </tr>
+						  </tbody>
+						</table>
+				</form>
+
+
+
+		<div class="row">
+			<div class="col-md-6" style="background-color: yellow">
+		<!-- .col-md-6 -->
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Clear</button>
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Hold</button>
+	</div>
+
+	<div class="col-md-6" style="background-color: blue">
+		<!-- .col-md-6 -->
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Payment</button>
+	</div>
+		</div>
+	</div>
+
+	<div class=" row col-md-4" style="background-color: black">
+		<!-- Products -->
+
+		<div class="card" style="width: 8rem; height: 5rem">
+		  <img src="favicon.ico" alt="Card image">
+		  <div class="card-body">
+		  	<h4 class="card-title stretched-link">
+		  		{{name[0].name}}:{{name[0].price}}
+		  	</h4>
+		  </div>
+		</div>
+
+		<div class="card" style="width: 8rem; height: 5rem">
+		  <img src="favicon.ico" alt="Card image">
+		  <div class="card-body">
+		  	<h4 class="card-title stretched-link">
+		  		Banana
+		  	</h4>
+		  </div>
+		</div>
+
+		<div class="card" style="width: 8rem; height: 5rem">
+		  <img src="favicon.ico" alt="Card image">
+		  <div class="card-body">
+		  	<h4 class="card-title stretched-link">
+		  		Banana
+		  	</h4>
+		  </div>
+		</div>
+
+		<div class="card" style="width: 8rem; height: 5rem">
+		  <img src="favicon.ico" alt="Card image">
+		  <div class="card-body">
+		  	<h4 class="card-title stretched-link">
+		  		Banana
+		  	</h4>
+		  </div>
+		</div>
+
+		<!-- <div class="card" style="width: 2rem; height: 2rem">
+		  hi
+		</div>
+
+		<div class="card" style="width: 2rem; height: 2rem">
+		 hi
+		</div>
+		<div class="card" style="width: 2rem; height: 2rem">
+		 hi
+		</div>
+		<div class="card" style="width: 2rem; height: 2rem">
+		 hi
+		</div>
+		<div class="card" style="width: 2rem; height: 2rem">
+		 hi
+		</div>
+		<div class="card" style="width: 2rem; height: 2rem">
+		 hi
+		</div>
+		<div class="card" style="width: 2rem; height: 2rem">
+		 hi
+		</div>
+		<div class="card" style="width: 2rem; height: 2rem">
+		 hi
+		</div>
+		<div class="card" style="width: 2rem; height: 2rem">
+		 hi
+		</div> -->
+
+	</div>
+	</div>
+
+	
+</div>
