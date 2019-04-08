@@ -9,7 +9,7 @@ import {FlashMessagesService} from 'angular2-flash-messages';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-	name:Array;
+  name: Array<string>;
 
   constructor(private authService:AuthService,
   				private router:Router) { }
