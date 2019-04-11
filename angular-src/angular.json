@@ -23,10 +23,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/bootswatch.css"
+              "src/dist/css/style.css",
+              "src/dist/frameworks/fontawesome-free/css/all.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/dist/frameworks/jquery/jquery.min.js",
+              "src/dist/frameworks/bootstrap/js/bootstrap.bundle.min.js",
+              "src/dist/frameworks/jquery-easing/jquery.easing.min.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {

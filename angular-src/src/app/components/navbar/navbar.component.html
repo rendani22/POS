@@ -1,35 +1,81 @@
-   <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
-  <a class="navbar-brand" href="#">POS</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item"  [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
-        <a class="nav-link" [routerLink]="['/']">Home <span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-        <ul class="navbar-nav navbar-right">
-          <li *ngIf="" class="nav-item"  [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}">
-            <a class="nav-link"  [routerLink]="['/profile']">Profile <span class="sr-only">(current)</span></a>
-          </li>
-          <li *ngIf="" class="nav-item"  [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}">
-            <a class="nav-link"  [routerLink]="['/dashboard']">Dashboard <span class="sr-only">(current)</span></a>
-          </li>
-      <li class="nav-item"  [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}">
-        <a class="nav-link"  [routerLink]="['/login']">Login <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item"  [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}">
-        <a class="nav-link"  [routerLink]="['/register']">Register <span class="sr-only">(current)</span></a>
-      </li>
-       <li *ngIf="" class="nav-item"  >
-        <a class="nav-link"  href="#" (click)="onLogoutClick()">Log Out <span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
+  <!-- Sidebar - Brand -->
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+    <div class="sidebar-brand-icon rotate-n-15">
+      <i class="fas fa-receipt"></i>
+    </div>
+    <div class="sidebar-brand-text mx-3">POS</div>
+  </a>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider my-0">
+
+  <!-- Nav Item - Dashboard -->
+  <li class="nav-item active">
+    <a class="nav-link" href="/">
+      <i class="fas fa-fw fa-tachometer-alt"></i>
+      <span>Dashboard</span>
+    </a>
+  </li>
+
+  <!-- Nav Item - Products Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+      <i class="fas fa-fw fa-barcode"></i>
+      <span>Products</span>
+    </a>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <a class="collapse-item" href="/">List Products</a>
+        <a class="collapse-item" href="/">Add Products</a>
+        <a class="collapse-item" href="/">Import Products</a>
+        <hr class="sidebar-divider">
+        <a class="collapse-item" href="/">Print Barcodes</a>
+        <a class="collapse-item" href="/">Print Labels</a>
+      </div>
+    </div>
+  </li>
+
+  <!-- Nav Item - Category Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseCategory" aria-expanded="true" aria-controls="collapseCategory">
+      <i class="fas fa-fw fa-folder"></i>
+      <span>Category</span>
+    </a>
+    <div id="collapseCategory" class="collapse" aria-labelledby="headingCategory" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Custom Category:</h6>
+        <a class="collapse-item" href="/">List Categories</a>
+        <a class="collapse-item" href="/">Add Category</a>
+        <a class="collapse-item" href="/">Import Categories</a>
+      </div>
+    </div>
+  </li>
+
+  <!-- Nav Item - Sales Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseSales" aria-expanded="true" aria-controls="collapseSales">
+      <i class="fas fa-fw fa-folder"></i>
+      <span>Sales</span>
+    </a>
+    <div id="collapseSales" class="collapse" aria-labelledby="headingSales" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <a class="collapse-item" href="/">List Sales</a>
+        <a class="collapse-item" href="/">List Opened Bills</a>
+      </div>
+    </div>
+  </li>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
+
+  <!-- Sidebar Toggler (Sidebar) -->
+  <div class="text-center d-none d-md-inline">
+    <button class="rounded-circle border-0" id="sidebarToggle"></button>
   </div>
-</nav>
 
-<!-- Side bar -->
-
+</ul>
+<!-- End of Sidebar -->
